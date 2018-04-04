@@ -4,8 +4,9 @@
   "description": "lance-gg pong game gulp auto build scripts.",
   "main": "main.js",
   "scripts": {
-    "test": "node main.js",
-    "start": "babel-node main.ts --presets es2015"
+    "server": "node dist/main.js",
+    "start": "babel-node main.js --presets es2015",
+    "build": "gulp default"
   },
   "keywords": [
     "lance-gg"

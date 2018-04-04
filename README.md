@@ -19,6 +19,7 @@
 
 # Installing:
  * npm install (quick test)
+ * gulp default (start auto build by default)
  * Need Visual Studio Code and install ext gulp task.
  * Work in progress.
 

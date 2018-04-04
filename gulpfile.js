@@ -198,6 +198,7 @@ gulp.task('serve',[], function() {
     //gulp.start('browser-sync');
 });
 
+//lanuch browser for proxy url
 gulp.task('browser-sync',['serve'], function() {
     browserSync.init({
         proxy: "localhost:8080"
@@ -235,6 +236,7 @@ gulp.task('nodemon', function (cb) {
     return stream;
 });
 */
+
 gulp.task('default',['html','build','watch'],()=>{
     return gulp.start('browser-sync');
 });
