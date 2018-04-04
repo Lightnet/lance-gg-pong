@@ -1,12 +1,10 @@
 'use strict';
 
-
-
 import express from 'express';
 import socketIO from 'socket.io';
 import path from 'path';
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const INDEX = path.join(__dirname, '../index.html');
 
 // define routes and socket

@@ -37,6 +37,21 @@
             "type": "gulp",
             "task": "clean",
             "problemMatcher": []
+        },
+        {
+            "type": "gulp",
+            "task": "scr-client-build",
+            "problemMatcher": []
+        },
+        {
+            "type": "gulp",
+            "task": "src-server-script",
+            "problemMatcher": []
+        },
+        {
+            "type": "gulp",
+            "task": "browser-sync",
+            "problemMatcher": []
         }
     ]
 }
