@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["es2015"
+      , { "modules": false }]
+    ],
+    "plugins": [
+      ["module-resolver", {
+        "root": ["./"],
+        "alias": {
+          "lance": "./node_modules/lance-gg/es5"
+        }
+      }]
+  ]
+}
+  
