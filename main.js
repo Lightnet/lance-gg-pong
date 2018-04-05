@@ -20,10 +20,12 @@ import MyServerEngine from './src/server/MyServerEngine';
 import MyGameEngine from './src/common/MyGameEngine';
 //import Trace from '../../lance/lib/Trace';
 import Trace from 'lance/lib/Trace';
-
+//Trace.TRACE_NONE
+//
+var TRACE = Trace.TRACE_DEBUG
 // Game Instances
-const gameEngine = new MyGameEngine({ traceLevel: Trace.TRACE_NONE });
-const serverEngine = new MyServerEngine(io, gameEngine, { debug: {}, updateRate: 6 });
+const gameEngine = new MyGameEngine({ traceLevel: TRACE });
+const serverEngine = new MyServerEngine(io, gameEngine, { debug: {}, updateRate: 6, tracesPath: './logs' });
 
 // start the game
 serverEngine.start();
