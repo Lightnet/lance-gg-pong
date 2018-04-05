@@ -211,6 +211,8 @@ gulp.task('browser-sync',['serve'], function() {
     browserSync.init({
         proxy: "localhost:8080"
         ,files:['pulbic/**/*.*']
+        //,browser: 'chrome'
+        //,browser: 'firefox'
     });
 });
 
